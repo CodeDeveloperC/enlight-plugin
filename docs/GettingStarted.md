@@ -9,7 +9,7 @@ The plugin will soon be also available at [JetBrains Plugin Marketplace](https:/
 ## General Usage
 Enlight is available on the right side or your IDE as a secondary tool window, which can be shown and hidden as any other tool window
 
-![image](docs/images/enligh_toolwindow_side.png)
+![image](images/enligh_toolwindow_side.png)
 
 As long as you are working with Java code you can make use of this plugin to generate flowcharts of any method.
 
@@ -17,10 +17,10 @@ As long as you are working with Java code you can make use of this plugin to gen
 There are 2 ways of generating a flowchar for a particular Java method:
 
 * In you opened editor put the cursor on any line of the method you want to work with. Then go to the Enlight toolwindow and click on the "Generate Flowchart" icon.
-![image](docs/images/generate_flowchart_toolwindow.png)
+![image](images/generate_flowchart_toolwindow.png)
 
 * In your opened editor right click on any line of the method you want to work with to open the context menu. Then in the context menu go to Enlight => Generate Flowchart.
-![image](docs/images/generate_flowchart_context_menu.png) 
+![image](images/generate_flowchart_context_menu.png) 
 
 ### Navigating
 Once your flowchart diagram is generated you can move around by holding CTRL while clicking and dragging around.
@@ -39,7 +39,7 @@ When you select an edge, if it has a logical condition associated it will be dis
 
 You can force displaying all edges conditions by right clicking anywhere in the diagrama and selecting option "Show Edges Labels" from the context menu.
 
-![image](docs/images/edges_conditions.png)
+![image](images/edges_conditions.png)
 
 ### Coloring Nodes and Edges
 
@@ -52,7 +52,7 @@ Multiple elements can also be selected with the mouse by left clicking and drawi
 
 If you want to clear all colors, just right click anywhere in the diagram and from the context menu select "Reset all elements colors".
 
-![image](docs/images/custom_node_and_edges_coloring.png)
+![image](images/custom_node_and_edges_coloring.png)
 
 ### Call Hierarchy
 
@@ -91,8 +91,8 @@ You can select any of the paths and Enligth will color all involved nodes and ed
 
 Custom colors for paths can be set by double clicking in each of color box next to the paths in the dialog.
 
-![image](docs/images/paths_between_nodes.png)
+![image](images/paths_between_nodes.png)
 
 ## Settings
 
-![image](docs/images/enlight_settings.png)
+![image](images/enlight_settings.png)

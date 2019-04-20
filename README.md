@@ -170,8 +170,11 @@ Warning: Since I am not a formal Java developer, the plugin design and code migh
 * Q: I have errors or things are not working properly with the plugin. What do I do?
 
   A: Please create an issue with all the details or send an email. I really appreciate all feedback.
+
    
-# [Getting Started](docs/GettingStarted.md)
+# Getting Started
+Please check ourt [Getting Started](docs/GettingStarted.md) section for more details on how to use all Enlight features
+
 
 # Development Environment Setup
 

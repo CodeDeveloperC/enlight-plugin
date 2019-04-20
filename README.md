@@ -171,6 +171,8 @@ Warning: Since I am not a formal Java developer, the plugin design and code migh
 
   A: Please create an issue with all the details or send an email. I really appreciate all feedback.
    
+# [Getting Started](docs/GettingStarted.md)
+
 # Development Environment Setup
 
 TODO - Coming soon

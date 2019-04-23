@@ -103,11 +103,10 @@ It leverages the PSI (Program Structure Interface) API which is kind of an AST o
 
 What makes this interesting is that it works at source code level, even with code that does not compile. There is no need of having a JAR file or bytecode.
 
-In order to generate the graphs, the plugin makes use of the Diagramming API and UML Support plugin available only on IntelliJ IDEA Ultimate editions.
-[https://www.jetbrains.com/help/idea/class-diagram.html] [https://confluence.jetbrains.com/display/IDEADEV/Diagram+Framework]
+In order to generate the graphs, the plugin makes use of the Diagramming API and UML Support plugin available only on IntelliJ IDEA Ultimate editions. <https://www.jetbrains.com/help/idea/class-diagram.html> <https://confluence.jetbrains.com/display/IDEADEV/Diagram+Framework>
 
 The diagramming API is powered by yFiles under the hood. yFiles is an amazing library for all kind of graphs developed by yWorks. 
-This library is the same one that, for example, BinNavi uses [https://github.com/google/binnavi]
+This library is the same one that, for example, [BinNavi](https://github.com/google/binnavi) uses.
 
 As you can see, yFiles requires a license so I guess that might be the reason why you can only use it on Ultimate editions.
 
@@ -121,9 +120,9 @@ Warning: Since I am not a formal Java developer, the plugin design and code migh
 
 * Exporting all conditions for a particular execution path in some format that can be later used with a solver
 
-* Integrate Analyze Data Flow engine [https://www.jetbrains.com/help/idea/analyzing-data-flow.html] [https://blog.jetbrains.com/idea/2018/01/fumigating-the-idea-ultimate-code-using-dataflow-analysis/] [https://blog.jetbrains.com/idea/2018/06/improved-data-flow-analysis-in-intellij-idea-2018-2/]
+* Integrate Analyze Data Flow engine <https://www.jetbrains.com/help/idea/analyzing-data-flow.html> <https://blog.jetbrains.com/idea/2018/01/fumigating-the-idea-ultimate-code-using-dataflow-analysis/> <https://blog.jetbrains.com/idea/2018/06/improved-data-flow-analysis-in-intellij-idea-2018-2/>
 
-* Develop custom Code Inspections to identify potential security issues [https://www.jetbrains.com/help/idea/code-inspection.html] [https://www.jetbrains.com/help/idea/creating-custom-inspections.html] [https://www.jetbrains.org/intellij/sdk/docs/tutorials/code_inspections.html]
+* Develop custom Code Inspections to identify potential security issues. Code Inspection references: [1](https://www.jetbrains.com/help/idea/code-inspection.html), [2](https://www.jetbrains.com/help/idea/creating-custom-inspections.html), [3](https://www.jetbrains.org/intellij/sdk/docs/tutorials/code_inspections.html)
 
 * Automatically color nodes that contain code detected by custom Code Inspections to easily detect potentially dangerous code and highlight paths to them.
 
@@ -133,7 +132,7 @@ Warning: Since I am not a formal Java developer, the plugin design and code migh
  
 * Integrate the IDE Debugger (be able to highlight current line and variable values as IntelliJ already does on the current editor) 
 
-* Integrate with Code Coverage by highlighting nodes [https://www.jetbrains.com/help/idea/code-coverage.html]
+* Integrate with [Code Coverage](https://www.jetbrains.com/help/idea/code-coverage.html) by highlighting nodes 
 
 
 # Not Yet Supported
@@ -151,11 +150,11 @@ Warning: Since I am not a formal Java developer, the plugin design and code migh
 
 * Q: Why does the plugin not work with IntelliJ IDEA Community Edition?
 
-  A: The plugin makes use of the Diagramming API and UML Support plugin which are only available on Ultimate editions. Check [https://www.jetbrains.com/help/idea/class-diagram.html] 
+  A: The plugin makes use of the Diagramming API and UML Support plugin which are only available on Ultimate editions. Check <https://www.jetbrains.com/help/idea/class-diagram.html>
   
 * Q: Does the plugin support other languages?
   
-  A: It only supports Java at the moment. However it is possible to add support for any other language supported by Jetbrains' IDEs for which there is PSI [https://www.jetbrains.org/intellij/sdk/docs/basics/architectural_overview/psi.html]
+  A: It only supports Java at the moment. However it is possible to add support for any other language supported by Jetbrains' IDEs for which there is [PSI](https://www.jetbrains.org/intellij/sdk/docs/basics/architectural_overview/psi.html)
   Unfortunately I don't have enough time to work on more languages at the moment. So collaboration and PRs are welcomed :) 
   This will probably require some thought and refactoring but it can be done for sure!
      
@@ -173,7 +172,7 @@ Warning: Since I am not a formal Java developer, the plugin design and code migh
 
    
 # Getting Started
-Please check ourt [Getting Started](docs/GettingStarted.md) section for more details on how to use all Enlight features
+Please check our [Getting Started](docs/GettingStarted.md) section for more details on how to use all Enlight features
 
 
 # Development Environment Setup
@@ -186,7 +185,9 @@ Please check the [CONTRIBUTING](docs/CONTRIBUTING.md) section
 
 
 # License
+We are in process of properly defining which open source license to use.
 
+Proposed License:
 Apache License Version 2.0 - [LICENSE](LICENSE)
 
 
@@ -201,16 +202,16 @@ Apache License Version 2.0 - [LICENSE](LICENSE)
 
 This plugin has been greatly influenced by these other plugins:
 
-* https://plugins.jetbrains.com/plugin/227-psiviewer
-* https://plugins.jetbrains.com/plugin/7996-java-method-reference-diagram
-* https://plugins.jetbrains.com/plugin/3202-code-navigator
-* https://plugins.jetbrains.com/plugin/10503-controlflowgraph
-* https://plugins.jetbrains.com/plugin/8286-sequencediagram
-* https://plugins.jetbrains.com/plugin/1834-codegraph
-* https://plugins.jetbrains.com/plugin/9345-jdt-astview
-* https://plugins.jetbrains.com/plugin/8461-bytecode-editor
-* https://plugins.jetbrains.com/plugin/11218-local-code-review-tool
-* https://plugins.jetbrains.com/plugin/8351-code-comments
-* https://plugins.jetbrains.com/plugin/7125-grep-console
-* https://plugins.jetbrains.com/plugin/9511-multihighlight
-* https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-
+* <https://plugins.jetbrains.com/plugin/227-psiviewer>
+* <https://plugins.jetbrains.com/plugin/7996-java-method-reference-diagram>
+* <https://plugins.jetbrains.com/plugin/3202-code-navigator>
+* <https://plugins.jetbrains.com/plugin/10503-controlflowgraph>
+* <https://plugins.jetbrains.com/plugin/8286-sequencediagram>
+* <https://plugins.jetbrains.com/plugin/1834-codegraph>
+* <https://plugins.jetbrains.com/plugin/9345-jdt-astview>
+* <https://plugins.jetbrains.com/plugin/8461-bytecode-editor>
+* <https://plugins.jetbrains.com/plugin/11218-local-code-review-tool>
+* <https://plugins.jetbrains.com/plugin/8351-code-comments>
+* <https://plugins.jetbrains.com/plugin/7125-grep-console>
+* <https://plugins.jetbrains.com/plugin/9511-multihighlight>
+* <https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended->
